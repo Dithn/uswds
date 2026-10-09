@@ -1,0 +1,26 @@
+import DefaultContent from "./usa-docs.json";
+import Component from "./usa-docs.twig";
+
+export default {
+  title: "Pages/Documentation Page",
+  args: DefaultContent,
+  parameters: {
+    layout: "fullscreen",
+  },
+};
+
+const Template = (args) => Component(args);
+
+export const DocumentationPage = Template.bind({});
+
+export const TestDocumentationReorder = Template.bind({});
+TestDocumentationReorder.args = {
+  ...DefaultContent,
+  sidenav_reorder: false,
+};
+TestDocumentationReorder.argTypes = {
+  sidenav_reorder: {
+    control: { type: "boolean" },
+    name: "Reorder with CSS",
+  },
+};

@@ -1,5 +1,4 @@
 // dependencies
-@import "../elements/figure";
 
 // src
-@import "../components/media-block";
+@forward "usa-media-block";

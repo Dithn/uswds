@@ -1,5 +1,4 @@
 // dependencies
-@import "../components/alerts";
 
 // src
-@import "../components/site-alert";
+@forward "usa-site-alert";

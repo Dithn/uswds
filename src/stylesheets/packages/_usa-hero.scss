@@ -1,6 +1,4 @@
 // dependencies
-@import "../elements/layout-grid";
-@import "usa-button";
 
 // src
-@import "../components/hero";
+@forward "usa-hero";

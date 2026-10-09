@@ -1,195 +1,304 @@
 ## Welcome!
 
-We’re so glad you’re thinking about contributing to a Technology Transformation Services (TTS) open source project! If you’re unsure about anything, just ask — or submit your issue or pull request anyway. The worst that can happen is we’ll politely ask you to change something. We appreciate all friendly contributions.
+So glad you’re thinking about contributing to the U.S. Web Design System (USWDS)!
 
-TTS is committed to building a safe, welcoming, harassment-free culture for everyone. We expect everyone on the TTS team and everyone within TTS spaces, including contributors to our projects, to follow the [TTS Code of Conduct](https://github.com/18F/code-of-conduct/blob/master/code-of-conduct.md).
+USWDS is for everyone, as an open source product that accepts contributions from USWDS community members. USWDS is the result of community contributions, large and small. Your contribution helps make the Design System better for the next team that uses it.
 
-We encourage you to read this project’s CONTRIBUTING policy (you are here), its [LICENSE](LICENSE.md), [README](README.md) and its [Workflow](https://github.com/uswds/uswds/wiki/Workflow) process.
+## Code of Conduct
 
-If you have any questions or want to read more, check out the [18F Open Source Policy GitHub repository]( https://github.com/18f/open-source-policy), or [send us an email](mailto:18f@gsa.gov).
+USWDS is committed to building a safe, welcoming, harassment-free culture for everyone. 
 
-## Guidelines
+By contributing to this repository, you agree to adhere to the [GSA Social Media Policy](https://www.gsa.gov/directives-library/gsa-social-media-policy-2) (Section 10 Engagement). We expect all contributors, both internal and external, to engage respectfully and professionally in all project-related public communications.
 
-### Contributor Guidelines for Design
+Community participants also follow the [Digital.gov Community Guidelines](https://digital.gov/communities/community-guidelines/). Respect your peers, use plain language, be patient, practice constructive criticism, and stay organized.
 
-We have provided some guidelines for folks that would like to submit new components to the U.S. Web Design System and the lifecycle those new components will go through. For more detail, please visit the [guidelines on our wiki](https://github.com/uswds/uswds/wiki/Contribution-Guidelines:-Design).
+We encourage you to read USWDS’s Contribution Guide (you're here; great start!), about the USWDS [COMMUNITY](https://github.com/uswds/uswds/blob/develop/COMMUNITY.md) which includes how to be recognized here for your contributions, the USWDS [README](https://github.com/uswds/uswds/blob/develop/README.md), and the USWDS [LICENSE](https://github.com/uswds/uswds/blob/develop/LICENSE.md). You can also read more about the open source policy USWDS uses at the [18F Open Source Policy GitHub repository](https://github.com/18f/open-source-policy), and if you have questions, you can send USWDS an [email](mailto:uswds@gsa.gov).
 
-### Submitting an issue
+## How you can contribute
 
-To help us get a better understanding of the issue you’re submitting, follow our ISSUE TEMPLATE and the guidelines it describes.
+### Getting Started
 
-### Submitting a pull request
+Anyone can contribute to USWDS. Whether it's submitting a bug or proposing a new component, we welcome your ideas on how to improve the Design System.
 
-Here are a few guidelines to follow when submitting a pull request:
+First time contributor? That's totally okay — great, even. Someone reviews every single contribution before merging it into USWDS. If you’re unsure where to start, [ask in Discussions Q&A](https://github.com/uswds/uswds/discussions/new?category=q-a).
 
-1. Create a GitHub account or sign in to your existing account.
-1. Fork this repo into your GitHub account (or just clone it if you’re an 18F team member). Read more about forking a repo here on GitHub:
-[https://help.github.com/articles/fork-a-repo/](https://help.github.com/articles/fork-a-repo/)
-1. Create a branch from `develop` that lightly defines what you’re working on (for example, add-styles).
-1. Ensure that your contribution works via `npm`, if applicable.
-1. Once you’re ready to submit a pull request, fill out the PULL REQUEST template provided.
+To participate on GitHub, create an account or sign in to your existing account. Code contributors also need to set up [signature verification on their commits](#setting-up-verified-commits); asking a question does not require a local development setup.
+
+If you want to see some contributions before submitting your own, you can look at [past pull requests](https://github.com/uswds/uswds/pulls?q=is%3Apr+is%3Aclosed) [or issues contributed by other community members](https://github.com/uswds/uswds/issues?q=is%3Aissue%20state%3Aclosed). If you want ideas on where to start, check out the category of [good first issues](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Good+First+Issue%22). Again, if you have any questions, don’t hesitate to [reach out](mailto:uswds@gsa.gov).
+
+### Choose the right place
+
+| What you want to do | Where to go |
+| --- | --- |
+| Ask how to install, configure, customize, or use USWDS | [Discussions Q&A](https://github.com/uswds/uswds/discussions/new?category=q-a) |
+| Ask for accessibility guidance | [Accessibility discussions](https://github.com/uswds/uswds/discussions/new?category=accessibility) |
+| Report a reproducible bug, including an accessibility defect | [Bug report](https://github.com/uswds/uswds/issues/new?template=bug_report.yaml) |
+| Request a concrete enhancement to existing functionality | [Feature request](https://github.com/uswds/uswds/issues/new?template=feature_request.yaml) |
+| Explore an early idea or tradeoff | [Ideas](https://github.com/uswds/uswds/discussions/new?category=ideas) |
+| Propose a new component or pattern | [Proposals](https://github.com/uswds/uswds/discussions/new?category=proposals) |
+| Report incorrect documentation or a problem with designsystem.digital.gov | [uswds-site issues](https://github.com/uswds/uswds-site/issues/new/choose) |
+| Request a contributor role change | [Role change issue](https://github.com/uswds/uswds/issues/new?template=contributor_ladder.md) |
+
+Issues track actionable work, including bugs, enhancements, documentation fixes, and maintenance. Discussions are for help and exploration. You do not need to know a bug's root cause or have a fix to report it. If you are unsure whether you found a bug or need implementation help, start in Q&A.
+
+Search existing issues and discussions before starting a new conversation. For questions, describe your goal, what you tried, and your USWDS version when relevant. If a question was filed as an issue, a maintainer can convert it to a discussion with the conversation preserved; you do not need to re-file it. If a discussion identifies work to implement, we can create a linked issue.
+
+See [support options](.github/SUPPORT.md) and the [maintainer triage guide](.github/ISSUE_TRIAGE.md). For potential vulnerabilities, follow the [security policy](https://github.com/uswds/uswds/security/policy).
+
+### Setting up verified commits
+> [!important]
+> For security reasons, all commits to this repository must have a verified signature. Use one of the following GitHub guides to set up your verification signature:
+> - [GPG commit signature verification](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification#gpg-commit-signature-verification)
+> - [SSH commit signature verification](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification#ssh-commit-signature-verification)
+
+### Keeping discussions useful
+
+Maintainers should review unanswered questions and proposal decisions regularly. Age prompts a review; it does not by itself make a question resolved or a proposal obsolete.
+
+- Before closing an answered question, read follow-up replies and linked issues. Explain what was resolved and preserve the accepted answer.
+- Link overlapping proposals and identify the decision or evidence still needed. Keep valid needs open; use status labels with a specific next step rather than implying a delivery commitment.
+- Close duplicates only after linking the canonical conversation and preserving useful context. An expired survey or recruitment invitation can be closed as outdated with an explanation.
+- Keep historical release posts in [Announcements](https://github.com/uswds/uswds/discussions/categories/announcements) and call recaps in [Past community calls](https://github.com/uswds/uswds/discussions/categories/past-community-calls). Preserve their original dates, authors, and content.
+- Publish release details in [GitHub Releases](https://github.com/uswds/uswds/releases) and the [website updates](https://designsystem.digital.gov/whats-new/). Use discussion announcements when community conversation would be useful.
+
+For community destinations and current guidance, see the pinned [Start here discussion](https://github.com/uswds/uswds/discussions/6937).
+
+### Reporting bugs and issues
+
+If USWDS is not behaving as expected, report the observed and expected behavior with steps to reproduce it. For help using or configuring USWDS, [ask in Q&A](https://github.com/uswds/uswds/discussions/new?category=q-a).
+
+#### 1. Check the issues backlog to see if your bug has already been reported
+
+First, check the USWDS [current issues](https://github.com/uswds/uswds/issues) to see if your [bug](https://github.com/uswds/uswds/issues?q=is%3Aissue%20bug%20type%3ABug) has already been reported. If it's about the USWDS website, it'll be in the [USWDS site repository](https://github.com/uswds/uswds-site/issues).
+
+If your bug has already been reported, leave a comment in the original issue and provide any additional context (if different than the original submission). This helps everyone better understand the issue and its impact.
+
+#### 2. Document how to reproduce the bug
+
+Before submitting a bug, try to recreate it and document the steps someone else can take to reproduce it. If you can, take screen shots to capture specific details about the bug. This helps everyone understand its context, which is especially helpful since everyone can only fix bugs that they can understand and reproduce.
+
+#### 3. Submit an issue
+
+If your bug or issue isn't in [current issues](https://github.com/uswds/uswds/issues), submit a new issue using the [bug report template](https://github.com/uswds/uswds/issues/new?assignees=&labels=Type%3A+Bug%2CStatus%3A+Triage%2CNeeds%3A+Confirmation&template=bug_report.yaml&title=USWDS+-+Bug%3A+%5BYOUR+TITLE%5D). Someone may reach out to you if further clarification or context would be helpful. That person may also need your help testing possible solutions, so checking back on it would be helpful.
+
+If you have a code fix for the issue, go ahead and submit a [pull request](https://github.com/uswds/uswds-site/pulls), though it's helpful if you'd make sure to file the issue too (and connect the two), rather than jumping directly to the pull request.
+
+### Proposing feature requests or enhancements
+
+For a concrete enhancement to existing functionality, describe the problem and the behavior you want to change using the steps below. Start exploratory ideas in [Ideas](https://github.com/uswds/uswds/discussions/new?category=ideas), and new components or patterns in [Proposals](https://github.com/uswds/uswds/discussions/new?category=proposals). Usage and implementation questions belong in [Q&A](https://github.com/uswds/uswds/discussions/new?category=q-a).
+
+#### 1. Check the backlog of current feature requests
+
+Check our [feature requests backlog](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Type%3A+Feature+Request%22) for any duplicate or similar feature requests.
+
+If someone else already suggested your idea, upvote that feature request with a thumbs up emoji (👍) and comment on the issue to let us know why you need or could this feature request, along with any other supporting information. The number of upvotes (represented by 👍) can help with prioritizing feature requests.
+
+If you want to find other feature requests open for upvoting, check out the [feature request view sorted by status](https://github.com/orgs/uswds/projects/8/views/18?sortedBy%5Bdirection%5D=asc&sortedBy%5BcolumnId%5D=Status).
+
+#### 2. Submit an issue
+
+If your idea _isn't_ in the [current issues backlog](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Type%3A+Feature+Request%22), submit an issue using the [feature request template](https://github.com/uswds/uswds/issues/new?assignees=&labels=Type%3A+Feature+Request%2CStatus%3A+Triage&template=feature_request.yaml&title=USWDS+-+Feature%3A+%5BYOUR+TITLE%5D).  Someone may reach out to you if further clarification on your submission would be helpful to move it forward.
+
+
+### Submitting code contributions
+
+#### Getting started with USWDS code
+
+1. First, fork this repo into your GitHub account. Read more about [forking a repo on GitHub](https://help.github.com/articles/fork-a-repo/).
+1. Open your local copy of the repository then run the following command in terminal to install project dependencies:
+    ```sh
+    npm install
+    ```
+1. Now that all of your dependencies are installed, start your local server by running the following command:
+    ```sh
+    npm start
+    ```
+1. Open `localhost:6006` in your browser to see your local build of the the USWDS component library in Storybook.
+
+Here are a few other utility commands you might find useful:
+
+- `npm run lint`: Runs `eslint` and `sass-lint` against JavaScript and Sass files
+- `npm run prettier`: Runs `prettier` against HTML, JavaScript, and Sass files
+- `npm test`: Runs all tests and linters
+
+### Creating a pull request (PR)
+The original issue creator is responsible for ushering the issue through its lifecycle. Every pull request (PR) must meet the following criteria:
+
+* PRs should contain a statement to be used in [Release Notes](https://github.com/uswds/uswds/releases/).   
+  	*Example:* ***`Brief statement in bold.`** `Followed by description of work that was done.`*  
+* Most PRs should be linked to an issue.  
+  * Example: `closes #issue_no` or `resolves #issue_no`.  
+* Be as descriptive as possible and use inline GitHub comments to improve clarity.   
+* Include a *How to Test* section.  
+
+**Examples of good PRs**
+
+* [USWDS \- Combo box: Enhance combo box results](https://github.com/uswds/uswds/pull/6122)  
+* [USWDS \- Step indicator: Remove aria-label from wrapper](https://github.com/uswds/uswds/pull/6146)  
+* [\[Beta\] Update package exports](https://github.com/uswds/uswds/pull/4624)  
+* [Improve utility settings](https://github.com/uswds/uswds/pull/4631)  
+* [Beta \- repair site integration issues](https://github.com/uswds/uswds/pull/4611)
+
+#### Submitting a pull request for a bug fix:
+
+1. Check our [open issues backlog](https://github.com/uswds/uswds/issues) for any duplicate or similar issues.
+1. If someone else already submitted your bug, feel free to comment and provide additional context (if different than the original submission).
+1. If your proposed fix isn't in the open issues backlog, create an [issue](https://github.com/uswds/uswds/issues/new/choose) for the change you’re proposing. This helps with tracking.
+1. Follow the steps in the [Getting started with USWDS code](#getting-started-with-uswds-code) section above to get set up locally.
+1. Create a branch from `develop` and name it in a way that lightly defines what you’re working on (for example, `add-styles`).
+1. Once you’re ready to submit a pull request, fill out the [pull request template](https://github.com/uswds/uswds/compare).
+1. Link your pull request to the issue you created. This important step hooks together which issue this solution fixes. Tip: You can link the pull request in the body of the pull request template using the GitHub comment `closes #issue-no` or `resolves #issue-no`. You can read more about linking pull requests on [GitHub](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue).
 1. Submit your pull request against the `develop` branch.
 
-[Open an issue](https://github.com/uswds/uswds/issues/new) if you have questions or need help with setup.
+If your pull request is accepted, a USWDS Administrator or Maintainer will merge the pull request for you.
 
-### Running locally
+#### Submitting a pull request for a feature request or enhancement:
 
-The U.S. Web Design System `uswds` package (the zip download and the
-files needed to use the Design System on your project) is built primarily with
-two [Node.js] tools: [Fractal] and [Gulp]. Once you've cloned this
-repository, you'll need to install its dependencies:
+1. Check our [open issues backlog](https://github.com/uswds/uswds/issues) for any duplicate or similar issues.
+1. If your idea has already been suggested, upvote that feature request with a thumbs up emoji (👍) and comment on the issue to let us know why you need this feature request or enhancement, along with any other supporting information.
+Tip: If you want to find other feature requests open for voting, check out our [feature requests sorted by votes](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Status%3A+Voting+Open+%F0%9F%91%8D%22+sort%3Areactions-%2B1-desc).
+1. If your proposed fix _isn't_ in the [open issues backlog](https://github.com/uswds/uswds/issues), [create an issue](https://github.com/uswds/uswds/issues/new?assignees=&labels=Type%3A+Feature+Request%2CStatus%3A+Triage&template=feature_request.yaml&title=USWDS+-+Feature%3A+%5BYOUR+TITLE%5D) describing your proposal. This doesn’t mean a pull request wouldn't be welcome. Having the conversation in the open first is helpful to others — people might have supporting thoughts to add to your proposal. If you’ve already got a pull request done, no worries. Go ahead and attach it to the issue.
 
-```sh
-npm install
+### Automated code review
+
+When you open a non-draft pull request against `develop`, CodeRabbit posts an automated review, including for Dependabot updates. It summarizes the change for reviewers and flags things like unsanitized markup, missing test coverage, and hardcoded values that should use a design token. Lockfiles and SVG source files are included. Drafts and GitHub Actions pull requests are reviewed on demand with `@coderabbitai review`.
+
+A few things to know:
+
+* **It isn't the Core team's review.** A USWDS Core team member still reviews and approves every PR before it merges. CodeRabbit is advisory, not a required status check. Maintainers must still read and address its feedback before merging, as described in the [merge procedure](#merging-pull-requests).
+* **You don't have to agree with it.** If a comment is wrong or doesn't apply, reply and explain why. Mention `@coderabbitai` to reply directly. It can save this feedback as a learning; recurring project standards belong in the repository's review instructions.
+* **You can ask for another pass.** CodeRabbit reviews each push without a commit-count pause, subject to provider rate limits. Comment `@coderabbitai review` for an incremental review, or `@coderabbitai full review` to start over. Use `@coderabbitai pause` and `@coderabbitai resume` to control automatic reviews on an individual pull request.
+* **It doesn't review screen reader behavior.** It may list the assistive technology and browsers your change needs to be tested with, but a person has to do that testing.
+* **It won't push commits to your branch.** Every commit to this repo needs a [verified signature](#setting-up-verified-commits), so CodeRabbit is set up to comment only.
+
+Its behavior is configured in [`.coderabbit.yaml`](https://github.com/uswds/uswds/blob/develop/.coderabbit.yaml).
+
+### Pull request titles
+
+Use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) for PR titles and the resulting squash commits:
+
+```text
+type(scope): describe the change
 ```
 
-**ProTip**: You can also use [Yarn], which tends to install dependencies more quickly than npm.
+Choose a lowercase type from `feat`, `fix`, `docs`, `test`, `ci`, `build`, `chore`, `refactor`, `perf`, `style`, or `revert`. Use `feat` for new functionality, `fix` for bug fixes, `docs` for documentation, and `test` for tests. Use `ci` for automation, `build` for build tooling or dependencies, and `chore` for other maintenance. `style` means code formatting, not a visual change to a component; use `fix` or `feat` for those changes as appropriate.
 
-To start the [Fractal] live reload server, run:
+The scope is optional. When useful, name the component or area, such as `modal`, `accordion`, or `contributing`. Scopes start with a lowercase letter or digit and contain only lowercase letters, digits, dots, underscores, slashes, or hyphens. Follow the colon with one space and a nonempty, single-line description, with no leading or trailing whitespace. Do not add the `USWDS -` prefix.
 
-```sh
-npm start
-```
+Examples:
 
-Then, visit [localhost:3000](http://localhost:3000) in a web browser to
-peruse the component library. While the server is running, any changes that
-you make to the component templates or configurations will reload the page
-automatically.
+- `docs(contributing): clarify the merge procedure`
+- `test(modal): cover keyboard dismissal`
+- `fix(accordion): preserve expanded state`
+- `ci: validate pull request titles`
 
-If you're working on the JavaScript or CSS, you can run the "watch" task in
-another shell to automatically rebuild the distribution files that Fractal
-references with:
+For a breaking change, add `!` immediately before the colon, for example `feat(modal)!: remove the deprecated option`. Also explain the break and migration steps in the PR's breaking-change section and retain a concise explanation in the squash commit body. A type describes intent; it does not establish that a change is safe to merge.
 
-```sh
-npm run watch
-```
+The `PR title` workflow validates this syntax on PR creation, reopening, pushes, title edits, and readiness for review. It runs the policy from the trusted base commit, so a PR cannot change its own enforcement. A separate `Title validator tests` workflow tests proposed validator changes with read-only permissions. Rename an invalid title in GitHub; no commit rewrite is needed. Working commits do not need conventional messages, but all commits must still satisfy the signature requirements. Maintainers must recheck the current title before squash merging.
 
-### Testing
+Apply this convention to new PRs and open PRs as they are prepared for merge. Do not rename historical merged PRs or rewrite published commits. Issue titles keep their existing conventions. Version selection and release publishing remain separate from title validation; this change does not introduce automatic semantic releases.
 
-To run the component unit tests, run:
+For rollout, merge the workflow first, then enable the `PR title` check as a required status check on `develop` after confirming a successful run. This trusted-base workflow becomes available after merge. Trigger a fresh run on existing PRs, for example by editing their titles; normal base-refresh requirements still apply. Preserve the other required checks and review protections.
 
-```sh
-npm test
-```
+### Merging pull requests
 
-This will also run [eslint] and [stylelint] to ensure that the JavaScript
-and SCSS source files meet our coding standards along with [snyk test] to check for package dependency vulnerabilities. To lint without the unit
-tests, you'll need [Gulp][]. Install it globally (`npm install -g
-gulp-cli`), then run:
+Use **Squash and merge** for pull requests in this repository. Each PR should contain one focused change and produce one commit on the target branch. Repository settings disable merge commits and rebase merges; `develop` also requires linear history. Contributors do not need to squash their working commits before review, but all commits must meet the signature requirements.
 
-```sh
-gulp eslint
-gulp stylelint
-```
+Maintainers follow this procedure:
 
-(Or, if you don't want to install Gulp globally, you can run `$(npm
-bin)/gulp` instead of `gulp`.)
+1. **Confirm scope and target.** Review the complete diff against the current target branch, normally `develop`. Keep unrelated fixes separate. Use the [conventional PR title format](#pull-request-titles).
+2. **Finish validation.** Resolve conflicts and run checks appropriate to the final changes. Required CI must pass against the current base. After new commits or a base refresh, reassess the diff and wait for the relevant checks again.
+3. **Read CodeRabbit's completed review.** Inspect inline comments and findings inside the review body, including collapsed sections. Fix valid findings; explain findings that are incorrect or deliberately deferred. After pushing fixes, inspect the follow-up review before merging. If review is pending, paused, rate-limited, or unavailable, report that state and wait; a missing review is not a clean review.
+4. **Obtain final approval.** Meet the code-owner and independent-review requirements on the final changes, including approval by someone other than the last pusher. CodeRabbit does not replace that approval. When the requester reserves final review, present the final diff and wait for their explicit approval before merging.
+5. **Squash the reviewed head.** Recheck the head commit and merge state immediately before merging. Use the PR title for the squash commit title. The default body is blank; add a concise explanation when needed, rather than copying every working commit or the entire PR template. With the GitHub CLI, use `gh pr merge <number> --squash --match-head-commit <reviewed-head-sha>`.
+6. **Verify the result.** Confirm the PR is merged and record the resulting commit. Delete the completed topic branch when appropriate; start subsequent work from the updated target branch.
 
-Note that running the tests also requires an installation of
-Chrome v59 or higher (v60 if you're on Windows).
+Do not use admin bypass as a routine merge path. A request to merge does not by itself authorize bypassing protections. If a protection blocks the merge, report the exact blocker. An exception requires explicit authorization from an authorized repository administrator identifying the PR and protection to bypass; record the reason in the PR. Do not disable repository protections to clear an individual PR.
 
-If you want to run a single test file, run `npm run mocha ${path/to/spec-file}`,
-substituting the actual path to the spec. Only javascript files can be executed by the `mocha` runner,
-and only those js files in the `spec` directory ending with a `.spec.js`.
+Automatic topic-branch deletion remains enabled. Merge queue adoption is separate work: required CircleCI and GitHub Actions checks must first be configured and verified for queue builds. Until then, refresh and validate PRs as they reach the front of the merge sequence.
 
-Alternatively, you can add an `.only` to a `describe` or `it` block (i.e. `describe.only('my spec')`)
-and run the `npm run test` command. Keep in mind that this will also run linters and aXe accessibility tests.
+### Proposing something else?
 
-To run all of the unit tests, run `npm run test:unit`.
+If your contribution does not fit the options above, start in [General discussions](https://github.com/uswds/uswds/discussions/new?category=general). We can help identify the next step and create a linked issue if there is work to track.
 
-**For non-OSX users**:
-Before running the tests, if you are developing on a machine running an operating system other than OSX,
-you'll need to export a `CHROME_PATH` environment variable that points to Chrome's binary location. This ensures `chrome-launcher`
-can find a version of Chrome for our aXe visual acceptence tests. A table of the locations of the binary
-for each OS can [be found here](https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver#requirements).
+## How we prioritize
 
-#### Visual regression testing
+Once you’ve submitted a contribution, someone will triage it based on the following considerations:
+1. **Size:** Can we accomplish this in a sprint or will this take longer? Is it a big effort that will need to be broken up?
+1. **Severity:** What type of functionality is impacted? Is there a workaround?
+1. **Priority:** Does this align with USWDS vision and roadmap goals?
 
-The Design System comes with optional tooling for detecting visual regressions,
-which can be especially useful if you're refactoring CSS.
+Note: USWDS prioritizes issues that affect accessibility.
 
-These tests work by comparing current screenshots of the Design System's Fractal
-components to "golden" screenshots that represent what the components are
-supposed to look like.
+These considerations help Contributors and Maintainers decide how to prioritize the issue.
 
-Golden screenshots are stored on your local development system *only*;
-they're not version controlled. This means that after making changes to a branch,
-you can switch to the branch you'd like to compare it to (e.g. the `develop`
-branch) to generate your golden screenshots.
+You can stay up to date on the status of your contributions through [GitHub email notifications](https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications) (external link) and the assigned labels on the issue.
 
-To generate the golden screenshots, run:
+## Joining the USWDS Community as a Contributor
 
-```
-npm run test:visual:update
-```
+_If you're comfortable with git_, the short version is: fork the repo, add yourself to the contributor table in `COMMUNITY.md`, open a PR, then open an issue and link them both together in their details.
 
-Then, make any CSS refactorings (or switch to a branch that has them).
+_If you'd like a step-by-step walkthrough_ using only the GitHub website without needing a local version, 
+follow the instructions below:
 
-To compare the current state of your CSS to the golden screenshots, run:
+### Step 1: Open an issue
 
-```
-npm run test:visual
-```
+1. Navigate to: `https://github.com/uswds/uswds/issues/new?template=contributor_ladder.md`
+2. Title your issue using this format: `[ROLE CHANGE]: Change to Contributor - YourUsername`
+3. Fill in your GitHub username and set "Requested role" to Contributor
+4. Skip the PR link for now — you'll come back and add it after Step 2
+5. Check off the requirements and role responsibilities that apply to you and fill in your justification and supporting evidence
+6. Click **Create** to submit
+7. Make note of your issue number from the URL — you'll need it in Step 2 and at the end
 
-If the current screenshots don't match their golden counterparts, you will
-be directed to an HTML file that visually shows the differences between
-any conflicting screenshots.
+### Step 2: Open a pull request
+> Already have the repo forked? Skip to item 2.
 
-### Building
+1. Fork the USWDS repo at: `https://github.com/uswds/uswds/fork` and click **Create fork**
+2. Navigate to: `https://github.com/YOUR-USERNAME/uswds/edit/develop/COMMUNITY.md`
+3. Find the USWDS Community Contributors list (currently around line 36) and add yourself as the new last listed:
+   `[@your-username](https://github.com/YOUR-USERNAME)`
+4. Scroll down and Commit the change
+5. Navigate to: `https://github.com/uswds/uswds/compare/develop...YOUR-USERNAME:uswds:develop` and click **Create pull request**
+6. Title your PR: `docs(community): add [your username] as contributor`
+7. In the **Related issue** field, paste the link to your issue from Step 1
+8. Click **Create pull request** and copy the URL of your new resulting pull request
 
-To build the `uswds` package in preparation for releases, run:
+### Step 3: Link issue to pull request
 
-```sh
-npm run release
-```
+Navigate to your issue at `https://github.com/uswds/uswds/issues/YOUR-ISSUE-NUMBER` and add the pull request link from Step 2.
 
-## Coding guidelines
+The USWDS internal team will review both and follow up with next steps.
 
-The purpose of our coding styleguides are to create consistent coding practices across 18F. The styleguide should be treated as a guide — rules can be modified according to project needs.
+For questions about the contribution process, [ask in Q&A](https://github.com/uswds/uswds/discussions/new?category=q-a) or email [uswds@gsa.gov](mailto:uswds@gsa.gov). Use the role change issue above to track an actual role change.
 
-This project follows the 18F Front End Guide [CSS](https://pages.18f.gov/frontend/#css) and [JavaScript](https://pages.18f.gov/frontend/#javascript). Please use this guide for your reference.
+## Common terms
 
-### Code coverage
+There can be a lot of jargon when discussing how you can contribute to the Design System. Here are some common GitHub / open source / development terms:
 
-We use [code coverage](https://en.wikipedia.org/wiki/Code_coverage) tools to understand how much of our JavaScript is tested by our [unit test suite](spec/unit). Code coverage is one way (among many) of measuring code _quality_ more generally. Here's how it works for contributions:
-
-1. Each pull request creates a new coverage report on [Code Climate](https://codeclimate.com/).
-1. Code Climate then posts a status message back to GitHub that lists the coverage percentage on that branch, and the difference between that number and the one last reported on our default branch.
-
-For JavaScript contributions, we will review the code coverage percentage and change to ensure that the quality of our code is not dramatically affected.
-
-High code coverage numbers are generally good, and we would prefer that our coverage increases over time. We will not categorically reject contributions that reduce code coverage, but we may ask contributors to refactor their code, add new unit tests, or modify existing tests to avoid significant reductions in coverage.
-
-## Browser support
-See [browser support](https://designsystem.digital.gov/documentation/developers/#browser-support) in the “Developer Documentation”.
-
-## Our use of branches
-
-See the [release documentation](https://github.com/uswds/uswds/wiki/Release-process) for more information on our git/GitHub release workflow.
+- **Backlog** - list of deliverables (like a feature request, enhancement, or bug) that should be implemented into upcoming product development work.
+- **Bug** - problem resulting in something not working properly or as expected.
+- **Contribution** - when a community member provides work or gives back in a way that enhances the Design System — by proposing a new idea, enhancement, or fix that’s provided for other people to use.
+- **Enhancement** - a proposal to make something existing in the Design System work better.
+- **Feature request** - a proposal for something new to be included to the Design System.
+- **Fork** - a copy of a repository that you manage.
+- **Open source** - something that can be viewed, modified, and shared by anyone in the public with permissions enforced through an open source license.
+- **Pull request** - a way to notify team members when a contributor wants to merge new code changes into a main project repository. You can read more on [GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) (external link).
+- **Repository (aka repo)** - In Github, a repository contains all your files and each of their revisions. You can read more on [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories) (external link).
+- **Roadmap** - a summary that outlines a product’s goals, priorities, and progress over a period of time.
 
 ## Licenses and attribution
 
 ### A few parts of this project are not in the public domain
 
-For complete attribution and licensing information for parts of the project that are not in the public domain, see the [LICENSE](LICENSE.md).
+For complete attribution and licensing information for parts of the project that are not in the public domain, see the [LICENSE](https://github.com/uswds/uswds/blob/develop/LICENSE.md).
 
 ### The rest of this project is in the public domain
 
-The rest of this project is in the worldwide [public domain](https://github.com/uswds/uswds/blob/develop/LICENSE.md).
+The rest of this project is in the worldwide [public domain](https://github.com/uswds/uswds/blob/develop/LICENSE.md#the-rest-of-this-project-is-in-the-worldwide-public-domain).
 
-This project is in the public domain within the United States, and
-copyright and related rights in the work worldwide are waived through
-the [CC0 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/).
+This project is in the public domain within the United States, and copyright and related rights in the work worldwide are waived through the [CC0 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/).
 
 ### Contributions will be released into the public domain
 
-All contributions to this project will be released under the CC0
-dedication. By submitting a pull request, you are agreeing to comply
-with this waiver of copyright interest.
-
-[Node.js]: https://nodejs.org
-[Fractal]: http://fractal.build
-[Gulp]: http://gulpjs.com/
-[Yarn]: https://yarnpkg.com/
-[eslint]: http://eslint.org/
-[stylelint]: https://stylelint.io/
+All contributions to this project will be released under the CC0 dedication. By submitting a pull request, you're agreeing to comply with this waiver of copyright interest.

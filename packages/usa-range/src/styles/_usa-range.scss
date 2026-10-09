@@ -1,0 +1,156 @@
+@use "uswds-core" as *;
+
+@mixin range-focus {
+  background-color: color("white");
+  box-shadow: 0 0 0 units(2px) color($theme-focus-color);
+}
+
+@mixin range-track {
+  background-color: color("base-lightest");
+  border-radius: radius("pill");
+  border: units(2px) solid color("base-darker");
+  cursor: pointer;
+  height: units(2);
+  width: 100%;
+}
+
+@mixin range-thumb {
+  @include u-circle($theme-input-select-size);
+  background: color("base-lightest");
+  border: none;
+  box-shadow: 0 0 0 units(2px) color("base-darker");
+  cursor: pointer;
+
+  @media (forced-colors: active) {
+    outline: $border-high-contrast;
+  }
+}
+
+@mixin range-ms-fill {
+  background-color: color("base-lightest");
+  border-radius: radius("pill");
+  border: units(2px) solid color("base-darker");
+}
+
+.usa-range__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.usa-range__value {
+  @extend %block-input-general;
+  max-inline-size: 5%;
+  min-inline-size: 5%;
+  padding-top: 5px;
+  margin-left: 5px;
+}
+
+.usa-range {
+  @extend %block-input-general;
+  @extend %block-input-styles;
+  appearance: none;
+  border: none;
+  padding-left: 1px;
+  padding-right: 1px;
+  width: 100%;
+
+  &:focus {
+    outline: none;
+
+    &::-webkit-slider-thumb {
+      @include range-focus;
+    }
+
+    &::-moz-range-thumb {
+      @include range-focus;
+    }
+
+    &::-ms-thumb {
+      @include range-focus;
+    }
+  }
+
+  &::-webkit-slider-runnable-track {
+    @include range-track;
+  }
+
+  &::-moz-range-track {
+    @include range-track;
+  }
+
+  &::-ms-track {
+    @include range-track;
+  }
+
+  &::-webkit-slider-thumb {
+    @include range-thumb;
+    appearance: none;
+    // Webkit aligns the thumb's top edge to the track's content-box top.
+    // A negative margin-top pulls the thumb upward to center it on the track.
+    //
+    // Formula: margin-top = -(track_border_width + 2px)
+    //   The constant 2px is a fixed geometric offset independent of border size.
+    //   Confirmed empirically: border=1px → -3px (v3.13.0), border=2px → -4px (current).
+    //
+    // Update this value whenever the track border-width (range-track mixin) changes.
+    // Current track border: units(2px) → margin-top = -(2 + 2) = -4px.
+    margin-top: px-to-rem(-4px);
+  }
+
+  &::-moz-range-thumb {
+    @include range-thumb;
+  }
+
+  &::-ms-thumb {
+    @include range-thumb;
+  }
+
+  &::-ms-fill-lower {
+    @include range-ms-fill;
+  }
+
+  &::-ms-fill-upper {
+    @include range-ms-fill;
+  }
+
+  &:disabled,
+  &[aria-disabled="true"] {
+    // Required for mobile styles
+    opacity: 1;
+
+    &::-webkit-slider-runnable-track {
+      @include u-disabled;
+      @include u-disabled-high-contrast-border;
+    }
+
+    &::-moz-range-track {
+      @include u-disabled;
+      @include u-disabled-high-contrast-border;
+    }
+
+    &::-ms-track {
+      @include u-disabled;
+    }
+
+    &::-webkit-slider-thumb {
+      @include u-disabled;
+    }
+
+    &::-moz-range-thumb {
+      @include u-disabled;
+    }
+
+    &::-ms-thumb {
+      @include u-disabled;
+    }
+
+    &::-ms-fill-lower {
+      @include u-disabled;
+    }
+
+    &::-ms-fill-upper {
+      @include u-disabled;
+    }
+  }
+}

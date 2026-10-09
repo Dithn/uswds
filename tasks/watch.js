@@ -1,0 +1,38 @@
+const { watch, series, parallel } = require("gulp");
+const { unitTests, sassTests } = require("./test");
+const { lintSass } = require("./lint");
+const { compileSassForWatch } = require("./sass");
+const { compileJS, typeCheck } = require("./javascript");
+const { build } = require("./build");
+
+/**
+ * Watch Sass and JS files.
+ */
+function watchFiles() {
+  // Watch all my sass files and compile sass if a file changes.
+  watch(
+    "./src/**/**/*.scss",
+    series(compileSassForWatch, lintSass),
+  );
+
+  // Watch all my JS files and compile if a file changes.
+  watch(
+    "./src/**/**/*.js",
+    series(
+      parallel(typeCheck, compileJS),
+    )
+  );
+
+  // Watch all my unit tests and run if a file changes.
+  watch(
+    "./src/**/*.spec.js",
+    series(
+      series(unitTests, sassTests),
+      (done) => done())
+  );
+}
+
+exports.watch = series(
+  build,
+  watchFiles
+);

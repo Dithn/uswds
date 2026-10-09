@@ -1,0 +1,8 @@
+{
+  "require": [
+    "jsdom-global/register",
+    "packages/uswds-core/src/js/utils/test/register-web-components.js"
+  ],
+  "exit": true,
+  "timeout": 4000
+}
